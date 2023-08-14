@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+        .container{
+            width: 100%;
+            height: 100vh;/* view port height 1vh=19.2px */
+            background-color: white;
+            position: relative;/* To keep exact position */
+        }
+
+        .navbar{
+            display: flex;/* display in the side */
+            justify-content: space-between;/* to move navebar from left to right */
+            width: 85%;
+            margin-left: 100px;
+            align-items: center;
+        }
+.logo{
+    width: 130px;
+}
+
+.listitem{
+    display: inline-block;/* To place the list horizontaly */
+    list-style: none;/* To avoid the bullet points */
+    margin: 10px 20px;/* To add space b/w listed items */
+}
+
+.link{
+    color: black;
+    text-decoration: none;/* To remove the undeline of links */
+    font-weight: bold;/* To make text bolder */
+}
+
+.link:hover{/* When an event is occuring we have to change any property we use pseudo class,here we use hover property */
+    color: red;
+
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#lastname{
+    color: gold;
+    font-size: 50px;
+}
+
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.images img{
+    position: absolute;/* To set the image  */
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s ,left 2s;/* to make moving softly */
+}
+
+.images:hover #shape{
+    bottom: 70px;
+}
+
+.images:hover #girl{
+    left: 40%;
+}
+
+#about{
+    margin: 18% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    margin-top: 2rem;/* 1rem=16px */
+    display: grid;/* to display side by side */
+    grid-template-columns: repeat(2,1fr);/* 1fr=225px */
+    gap: 2rem;/* To get a space b/w the grids */
+}
+    
+.about-image img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;/* Starting and ending will be same */
+
+}
+.information{
+    margin-top: 1rem;/* To get a space b/w paragraph and list */
+}
+.info-box{
+    margin-bottom: 1rem;/* To get a space b/w info box */
+}
+.info-box span{
+    margin-left: 1rem;/* Space b/w icon and span */
+}
+
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-img img{
+    width: 80%;
+    padding-left: 4rem;
+}
+html{
+    scroll-behavior: smooth;/* To move smoothly from nav to home,about etc.. */
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin: 1rem;
+    position: relative;
+}
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: rgb(180, 180, 17);
+    width: 95%;
+}
+.css-bar{
+    background-color: rgb(180, 180, 17);
+    width: 88%;
+}
+.react-bar{
+    background-color: rgb(180, 180, 17);
+    width: 89%;
+}
+.js-bar{
+    background-color: rgb(180, 180, 17);
+    width: 85%;
+}
+.icon-set{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons,.up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;/* to get space b/w div */
+}
+.icons i{
+    font-size: 30px;
+    color: black;
+}
+.icons:hover{
+    background-image: linear-gradient(to bottom right,yellow ,red);
+}
+.icons:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+footer{
+    margin: 3rem 0px;
+}
+.up-arrow{
+    float: right;
+    margin: 0px 10px 50px 0px;
+    background-image: linear-gradient(to bottom right,yellow,red);
+}
+.up-arrow:hover i{
+    color: white;
+}
